@@ -1,5 +1,5 @@
 <?php
-include 'db_connection.php';
+include 'connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['productId'])) {
     $productId = $_GET['productId'];
