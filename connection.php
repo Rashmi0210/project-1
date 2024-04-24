@@ -5,7 +5,7 @@
 
 
  $con = mysqli_init();
- mysqli_ssl_set($con,NULL,NULL, "new", NULL, NULL);
+// mysqli_ssl_set($con,NULL,NULL, "new", NULL, NULL);
  mysqli_real_connect($con, "agroserver.mysql.database.azure.com", "bhumi", "Agriculture1234", "bhumi", 3306, MYSQLI_CLIENT_SSL);
 
 
