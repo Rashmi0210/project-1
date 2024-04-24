@@ -23,7 +23,7 @@ $email = $_POST['email'];
  
 if ($stmt->execute()) {
     // Redirect to a success page
-    header("Location: agri-e-commerce-bhumi.azurewebsites.net/login.php");
+    header("Location: agri-e-commerce-bhumi.azurewebsites.net");
     exit;
 } else {
     echo "Registration failed. Error: " . $stmt->error;
