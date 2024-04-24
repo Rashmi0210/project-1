@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost"; // Replace with your server name
-$username = "root"; // Replace with your username
-$password = ""; // Replace with your password
+$servername = "agroserver.mysql.database.azure.com"; // Replace with your server name
+$username = "bhumi"; // Replace with your username
+$password = "Agriculture1234"; // Replace with your password
 $dbname = "bhumi"; // Replace with your database name
 
 // Create connection
@@ -12,7 +12,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM details"; // Replace 'student' with your actual table name
+$sql = "SELECT * FROM details"; // Replace 'details' with your actual table name
 $result = mysqli_query($conn, $sql);
 echo ' <span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
     <html lang="en">
@@ -99,7 +99,4 @@ echo '</body>';
 echo '</html>';
 
 mysqli_close($conn);
-      
-    
 ?>
-
